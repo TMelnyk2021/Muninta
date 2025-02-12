@@ -1,12 +1,15 @@
 import styles from './Menu.module.scss'
+import { MdBorderColor } from 'react-icons/md'
+import { MdOutlineQueryStats } from "react-icons/md";
+import { MdBuild } from "react-icons/md";
 
 function Menu() {
 
   return (
     <div className={styles.menu}>
-      <div>list</div>
-      <div>stats</div>
-      <div>profile</div>
+      <div><MdBorderColor /></div>
+      <div><MdOutlineQueryStats /></div>
+      <div><MdBuild /></div>
     </div>
   )
 
