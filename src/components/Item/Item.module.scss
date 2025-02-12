@@ -1,0 +1,31 @@
+.item_data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.75rem;
+    color: #0b8ba8;
+  }
+
+  .item {
+    color: #696963;
+    border-bottom: 1px solid #C4C4C0;
+  }
+  
+  .item_amount, .item_timespan, .item_average {
+    text-align: right;
+  } 
+  
+  .item_type, .item_amount {
+    color: #005BFF;
+    font-weight: bold;
+  }
+
+  .item_amount1 {
+    color: #312e2e;
+    text-align: right;
+  }
+
+  .item_amount2 {
+    color: #d35151;
+    text-align: right;
+  }
+  
