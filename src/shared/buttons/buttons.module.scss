@@ -1,8 +1,8 @@
 @import '../../assets/styles/_config.scss';
 
 .button {
-    background-color: $color-neutral-light;
-    color: $color-neutral-darkest;
+    background-color: #005BFF;
+    color: #ffffff;
     font-weight: bold;
     border: none;
     outline: none;
@@ -37,4 +37,19 @@
     background-color: $color-secondary;
     color: $color-neutral-lightest;
   }
+
+  .button_floating {
+    position: fixed;
+    bottom: 3.5rem;
+    right: 1rem;
+    border-radius: 50%;
+    font-size: 2.5em;
+    width: 1.5em;
+    height: 1.5em;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
   
