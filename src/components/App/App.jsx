@@ -1,3 +1,4 @@
+import Button from '../../shared/buttons'
 import Content from '../Content'
 import styles from './App.module.scss'
 import Item from '../Item'
@@ -17,7 +18,8 @@ function App() {
           <Item />
           <Item />
           <Item />
-        </Content>
+          <Button>LISÄÄ UUSI RIVI</Button>
+        </Content>     
         <Menu />
       </div>
     </>
