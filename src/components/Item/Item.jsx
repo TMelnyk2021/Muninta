@@ -1,3 +1,5 @@
+import { MdNavigateNext } from 'react-icons/md'
+
 import styles from './Item.module.scss'
 
 function Item() {
@@ -20,6 +22,9 @@ function Item() {
       <div className={styles.item_amount1}>100 L-munaa</div>
       <div className={styles.item_amount2}>80 huonoa munaa</div>
         </div>
+        <div className={styles.item_edit}>
+        <MdNavigateNext />
+      </div>
       </div>
     )
   }
