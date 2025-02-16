@@ -4,6 +4,9 @@ import styles from './Item.module.scss'
 
 function Item({data, ...props}) {
 
+  const locale = "fi-FI"
+  const collect_date = new Date(data.collect_date).toLocaleDateString(locale)
+
 
     return (
 
@@ -30,7 +33,7 @@ function Item({data, ...props}) {
       <div className={styles.item_data}>
         <div className={styles.item_type}>{data.type}</div>
         <div className={styles.item_amount}>{data.total_amount} munaa yhteensä </div>
-        <div className={styles.item_date}>{data.collect_date}</div>
+        <div className={styles.item_date}>{collect_date}</div>
         <div className={styles.item_amount1}>{data.s_amount} S-pienet</div> 
         <div className={styles.item_amount1}>{data.m_amount} M-keskikokoiset</div> 
         <div className={styles.item_amount1}>{data.l_amount} L-isot</div> 
