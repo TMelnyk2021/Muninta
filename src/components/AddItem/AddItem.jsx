@@ -4,7 +4,7 @@ import styles from './AddItem.module.scss'
 function AppItem(props) {
 
   return (
-    <div>
+    <div className={styles.additem}>
       <h2>Uuden merkinnän lisääminen
       <ItemForm />
       </h2>
