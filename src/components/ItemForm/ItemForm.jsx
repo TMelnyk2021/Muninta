@@ -4,6 +4,11 @@ import useForm from '../../shared/useform/useform'
 
 import styles from './ItemForm.module.scss'
 
+
+
+ // <input type='number' name='total_amount' step='1' onChange={handleChange} value={values.total_amount} />
+
+
 function ItemForm(props) {
 
   const submit = () => {
@@ -11,15 +16,16 @@ function ItemForm(props) {
     alert("SUBMIT")
   }
 
+
   const initialState = {
     type: "",
-    total_amount: 0,
-    collect_dat: "",
+    collect_date: "",
     s_amount: 0,
     m_amount: 0,
     l_amount: 0,
     bad_amount: 0,
   }
+
 
 
   const {values, handleChange, handleSubmit } = useForm(submit, initialState, false)
@@ -54,12 +60,6 @@ function ItemForm(props) {
 
 
             <div>
-              <label htmlFor='total_amount'>Kokomäärä</label>
-              <input type='number' name='total_amount' step='1' onChange={handleChange} value={values.total_amount} />
-
-            </div>
-
-            <div>
               <label htmlFor='collect_date'>Päivämäärä</label>
               <input type='date' name='collect_date' onChange={handleChange} value={values.collect_date} />
 
@@ -85,6 +85,7 @@ function ItemForm(props) {
               <input type='number' name='bad_amount' step='1' onChange={handleChange} value={values.bad_amount} />
             
             </div>
+
 
           </div>
 
