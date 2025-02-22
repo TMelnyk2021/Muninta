@@ -6,7 +6,8 @@ function AppItem(props) {
   return (
     <div className={styles.additem}>
       <h2>Uuden merkinnän lisääminen
-      <ItemForm />
+      <ItemForm onItemSubmit={props.onItemSubmit} />
+
       </h2>
     </div> 
   )
