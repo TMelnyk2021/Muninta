@@ -46,6 +46,10 @@ function ItemForm(props) {
   }
 
 
+  const handleDelete = () => {
+    props.onItemDelete(values.id)
+    navigate(-1)
+  }
 
   return (
     <form onSubmit={handleSubmit}>
@@ -105,7 +109,7 @@ function ItemForm(props) {
             <div>
               <Button onClick={handleCancel}>PERUUTA</Button>
             </div>
-            
+
             <div>
            
             <Button primary
@@ -118,6 +122,14 @@ function ItemForm(props) {
            
             </div>
           </div>
+          { props.onItemDelete ? 
+            <div className={styles.itemform_row}>
+              <div>
+                <Button secondary onClick={handleDelete}>POISTA</Button>
+              </div>
+              <div></div>
+            </div>
+            : null }
 
     </div>
   </form>
