@@ -61,12 +61,13 @@ function ItemForm(props) {
              
             <label htmlFor='type'>Kanala</label>
 
-            <select name='type' onChange={handleChange} value={values.type}>
-                <option>Kanala1</option>
-                <option>Kanala2</option>
-                <option>Kanala3</option>
-                <option>Kanala4</option>
+              <select name='type' onChange={handleChange} value={values.type}>
+                <option value="">(valitse)</option>
+                { props.typelist.map(
+                  type => <option key={type}>{type}</option>
+                )}
               </select>
+
 
             </div>
           </div>
