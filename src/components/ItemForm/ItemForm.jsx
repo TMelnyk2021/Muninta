@@ -105,8 +105,17 @@ function ItemForm(props) {
             <div>
               <Button onClick={handleCancel}>PERUUTA</Button>
             </div>
+            
             <div>
-            <Button primary type='submit'>{ props.formData ? "TALLENNA" : "LISÄÄ" }</Button>
+           
+            <Button primary
+                      disabled={values.type &&
+                                values.collect_date ? "" : "disabled"}
+                      type='submit'>
+                { props.formData ? "TALLENNA" : "LISÄÄ" }
+              </Button>
+           
+           
             </div>
           </div>
 
