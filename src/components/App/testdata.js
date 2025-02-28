@@ -2,7 +2,7 @@ const testdata = [
     {
       id:           "1",
       type:         "Kanala1",
-      total_amount: 90000,
+    //  total_amount: 90000,
       collect_date: "2025-02-09",
       s_amount:     300,
       m_amount:     8300,
@@ -12,7 +12,7 @@ const testdata = [
     {
       id:           "2",
       type:         "Kanala2",
-      total_amount:  10000,
+     // total_amount:  10000,
       collect_date: "2025-02-09",
       s_amount:      400,
       m_amount:      9400,
@@ -22,7 +22,7 @@ const testdata = [
     {
       id:            "3",
       type:          "Kanala1",
-      total_amount:  11000,
+    //  total_amount:  11000,
       collect_date: "2025-02-10",
       s_amount:      450,
       m_amount:      10100,
@@ -32,7 +32,7 @@ const testdata = [
     {
       id:            "4",
       type:          "Kanala2",
-      total_amount:  99000,
+    //  total_amount:  99000,
       collect_date: "2025-02-10",
       s_amount:      200,
       m_amount:      9500,
@@ -42,7 +42,7 @@ const testdata = [
     {
       id:            "5",
       type:          "Kanala3",
-      total_amount:  12000,
+    //  total_amount:  12000,
       collect_date: "2025-02-11",
       s_amount:      330,
       m_amount:      11400,
@@ -52,7 +52,7 @@ const testdata = [
     {
       id:            "6",
       type:          "Kanala3",
-      total_amount:  10250,
+    //  total_amount:  10250,
       collect_date: "2025-02-12",
       s_amount:      150,
       m_amount:      10000,

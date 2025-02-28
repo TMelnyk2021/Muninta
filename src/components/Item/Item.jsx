@@ -34,7 +34,6 @@ function Item({data, ...props}) {
 
       <div className={styles.item_data}>
         <div className={styles.item_type}>{data.type}</div>
-        <div className={styles.item_amount}>{data.total_amount} munaa yhteensä </div>
         <div className={styles.item_date}>{collect_date}</div>
         <div className={styles.item_amount1}>{data.s_amount} S-pienet</div> 
         <div className={styles.item_amount1}>{data.m_amount} M-keskikokoiset</div> 

@@ -28,8 +28,8 @@ function App() {
     }
 
     copy.sort( (a,b) => {
-      const aDate = new Date(a.paymentDate)
-      const bDate = new Date(b.paymentDate)
+      const aDate = new Date(a.collect_date)
+      const bDate = new Date(b.collect_date)
       return bDate - aDate
     })
     setData(copy)
