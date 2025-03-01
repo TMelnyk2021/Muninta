@@ -1,12 +1,13 @@
 import { useState } from 'react'
-import testdata from './testdata.js'
+// import testdata from './testdata.js'
 import AppRouter from '../AppRouter'
+import useLocalStorage from '../../shared/uselocalstorage'
+
 
 function App() {
 
-  const [data, setData] = useState(testdata)
-
-  const [typelist, setTypelist] = useState(["Kanala", "Kanala2", "Kanala3", "Kanala4", "Kanala5"])
+  const [data, setData] = useLocalStorage('muninta-data',[])
+  const [typelist, setTypelist] = useLocalStorage('muninta-typelist',[])
 
 
   const handleItemDelete = (id) => {
@@ -45,6 +46,8 @@ function App() {
 
   return (
     <>
+
+    
        <AppRouter data={data}
                  typelist={typelist}
                  onItemSubmit={handleItemSubmit}

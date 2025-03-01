@@ -15,6 +15,9 @@ function Stats(props) {
     })
   )
 
+  
+
+
 
   return (
     <div className={styles.stats}>

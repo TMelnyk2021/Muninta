@@ -2,6 +2,7 @@ import Button from '../../shared/buttons'
 
 import styles from './Settings.module.scss'
 
+
 function Settings(props) {
 
   const handleTypeSubmit = (event) => {
@@ -12,7 +13,9 @@ function Settings(props) {
   }
 
   return (
+    
     <div className={styles.settings}>
+      
       <h2>Asetukset</h2>
       <h3>Kanala</h3>
       <div className={styles.settings_types}>
