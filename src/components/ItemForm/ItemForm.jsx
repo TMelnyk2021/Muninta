@@ -61,12 +61,13 @@ function ItemForm(props) {
              
             <label htmlFor='type'>Kanala</label>
 
-              <select name='type' onChange={handleChange} value={values.type}>
+            <select id='type' name='type' onChange={handleChange} value={values.type}>
                 <option value="">(valitse)</option>
                 { props.typelist.map(
                   type => <option key={type}>{type}</option>
                 )}
               </select>
+
 
 
             </div>
@@ -78,28 +79,28 @@ function ItemForm(props) {
 
             <div>
               <label htmlFor='collect_date'>Päivämäärä</label>
-              <input type='date' name='collect_date' onChange={handleChange} value={values.collect_date} />
+              <input id='collect_date' type='date' name='collect_date' onChange={handleChange} value={values.collect_date} />
 
             </div>
 
             <div>
               <label htmlFor='s_amount'>S-pienet</label>
-              <input type='number' name='s_amount' step='1' onChange={handleChange} value={values.s_amount} />
+              <input id='s_amount' type='number' name='s_amount' step='1' onChange={handleChange} value={values.s_amount} />
             </div>
 
             <div>
               <label htmlFor='m_amount'>M-keskikokoiset</label>
-              <input type='number' name='m_amount' step='1' onChange={handleChange} value={values.m_amount} />
+              <input id='m_amount' type='number' name='m_amount' step='1' onChange={handleChange} value={values.m_amount} />
             </div>
 
             <div>
               <label htmlFor='l_amount'>L-isot</label>
-              <input type='number' name='l_amount' step='1' onChange={handleChange} value={values.l_amount} />
+              <input id='l_amount' type='number' name='l_amount' step='1' onChange={handleChange} value={values.l_amount} />
             </div>
 
             <div>
               <label htmlFor='bad_amount'>Huonoa munaa</label>
-              <input type='number' name='bad_amount' step='1' onChange={handleChange} value={values.bad_amount} />
+              <input id='bad_amount' type='number' name='bad_amount' step='1' onChange={handleChange} value={values.bad_amount} />
             
             </div>
 
